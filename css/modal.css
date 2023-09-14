@@ -1,0 +1,31 @@
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 1600px;
+  height: 1024px;
+  transition: all 0.25s ease-in;
+  transform: scale(1);
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.25);
+}
+
+.close_modal {
+  position: relative;
+  margin-left: 505px;
+}
